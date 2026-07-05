@@ -65,7 +65,7 @@ input {
 .brand-mark img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .search {
@@ -203,7 +203,7 @@ input {
 
 .post-media {
   width: 100%;
-  aspect-ratio: 1 / 0.84;
+  max-height: 600px;
   display: block;
   object-fit: cover;
   background: #dde2e8;
@@ -220,14 +220,29 @@ input {
   gap: 4px;
 }
 
+/* --- Système de Like Interactif --- */
+.like-button {
+  color: var(--muted);
+  font-size: 1.4rem;
+  transition: color 0.2s ease, transform 0.1s ease;
+}
+
+.like-button:hover {
+  color: var(--danger);
+  background: rgba(237, 73, 86, 0.05);
+}
+
 .like-button.active {
+  color: var(--danger);
   background: rgba(237, 73, 86, 0.08);
+  transform: scale(1.15);
 }
 
 .action-icon {
-  width: 23px;
-  height: 23px;
+  width: 24px;
+  height: 24px;
   object-fit: contain;
+  display: block;
 }
 
 .post-copy {
@@ -367,9 +382,5 @@ input {
 
   .layout {
     margin-top: 12px;
-  }
-
-  .post-media {
-    aspect-ratio: 1 / 1;
   }
 }
