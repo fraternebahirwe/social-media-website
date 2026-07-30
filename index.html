@@ -16,39 +16,51 @@
           <span>Social Media</span>
         </div>
         <input class="search" type="search" placeholder="Search" aria-label="Search" />
-        <nav class="nav-actions" aria-label="Main">
-          <button class="icon-button" type="button" title="Home">⌂</button>
-          <button class="icon-button" type="button" title="Messages">✉</button>
-          <button class="icon-button" type="button" title="Create">＋</button>
+        <nav class="nav-actions" aria-label="Main Navigation">
+          <button class="icon-button" type="button" title="Home" aria-label="Home">⌂</button>
+          <button class="icon-button" type="button" title="Messages" aria-label="Messages">✉</button>
+          <button class="icon-button" type="button" title="Create" aria-label="Create">＋</button>
         </nav>
       </div>
     </header>
 
     <main class="layout">
       <section class="feed" aria-label="Feed">
+        <!-- Stories Section -->
         <div class="stories" aria-label="Stories">
           <button class="story" type="button">
-            <img src="images/zizu.PNG" alt="Fraterne story" />
+            <div class="story-avatar">
+              <img src="images/zizu.PNG" alt="Fraterne story" />
+            </div>
             <span>fraterne</span>
           </button>
           <button class="story" type="button">
-            <img src="images/1981af06-1021-4ecb-a521-122c9e94f661.JPG" alt="Elon story" />
+            <div class="story-avatar">
+              <img src="images/1981af06-1021-4ecb-a521-122c9e94f661.JPG" alt="Elon story" />
+            </div>
             <span>elon</span>
           </button>
           <button class="story" type="button">
-            <img src="images/images.jpeg" alt="Josue story" />
+            <div class="story-avatar">
+              <img src="images/images.jpeg" alt="Josue story" />
+            </div>
             <span>josue</span>
           </button>
           <button class="story" type="button">
-            <img src="images/1622831864790.jpeg" alt="Jospin story" />
+            <div class="story-avatar">
+              <img src="images/1622831864790.jpeg" alt="Jospin story" />
+            </div>
             <span>jospin</span>
           </button>
           <button class="story" type="button">
-            <img src="images/IMG_2333.jpg" alt="Joseph story" />
+            <div class="story-avatar">
+              <img src="images/IMG_2333.jpg" alt="Joseph story" />
+            </div>
             <span>joseph</span>
           </button>
         </div>
 
+        <!-- Post Card 1 -->
         <article class="post-card">
           <header class="post-header">
             <div class="profile-line">
@@ -60,27 +72,39 @@
             </div>
             <button class="icon-button" type="button" title="More options">⋯</button>
           </header>
+          
           <img class="post-media" src="images/lol.png" alt="City moment in Kigali" />
+          
           <div class="post-actions">
             <div class="action-group">
               <button class="icon-button like-button" type="button" title="Like">♥</button>
-              <button class="icon-button" type="button" title="Comment"><img class="action-icon" src="images/speech.png" alt="Comment" /></button>
-              <button class="icon-button" type="button" title="Share"><img class="action-icon" src="images/send.png" alt="Share" /></button>
+              <button class="icon-button" type="button" title="Comment">
+                <img class="action-icon" src="images/speech.png" alt="Comment" />
+              </button>
+              <button class="icon-button" type="button" title="Share">
+                <img class="action-icon" src="images/send.png" alt="Share" />
+              </button>
             </div>
-            <button class="icon-button" type="button" title="Save"><img class="action-icon" src="images/save.png" alt="Save" /></button>
+            <button class="icon-button" type="button" title="Save">
+              <img class="action-icon" src="images/save.png" alt="Save" />
+            </button>
           </div>
+
           <div class="post-copy">
             <p class="likes"><span data-likes>203</span> likes</p>
             <p class="caption"><strong>Frat boy</strong> Good light, good day, good people.</p>
+            <div class="user-comments"></div>
             <p class="comments-link">View all 360 comments</p>
             <p class="time">1 hour ago</p>
           </div>
+
           <form class="comment-form">
-            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" />
+            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" required />
             <button type="submit">Post</button>
           </form>
         </article>
 
+        <!-- Post Card 2 -->
         <article class="post-card">
           <header class="post-header">
             <div class="profile-line">
@@ -92,27 +116,39 @@
             </div>
             <button class="icon-button" type="button" title="More options">⋯</button>
           </header>
+          
           <img class="post-media" src="images/onu.png" alt="Outdoor travel post" />
+          
           <div class="post-actions">
             <div class="action-group">
               <button class="icon-button like-button" type="button" title="Like">♥</button>
-              <button class="icon-button" type="button" title="Comment"><img class="action-icon" src="images/speech.png" alt="Comment" /></button>
-              <button class="icon-button" type="button" title="Share"><img class="action-icon" src="images/send.png" alt="Share" /></button>
+              <button class="icon-button" type="button" title="Comment">
+                <img class="action-icon" src="images/speech.png" alt="Comment" />
+              </button>
+              <button class="icon-button" type="button" title="Share">
+                <img class="action-icon" src="images/send.png" alt="Share" />
+              </button>
             </div>
-            <button class="icon-button" type="button" title="Save"><img class="action-icon" src="images/save.png" alt="Save" /></button>
+            <button class="icon-button" type="button" title="Save">
+              <img class="action-icon" src="images/save.png" alt="Save" />
+            </button>
           </div>
+
           <div class="post-copy">
             <p class="likes"><span data-likes>290</span> likes</p>
             <p class="caption"><strong>Drios $</strong> Another chapter, another view.</p>
+            <div class="user-comments"></div>
             <p class="comments-link">View all 830 comments</p>
             <p class="time">2 hours ago</p>
           </div>
+
           <form class="comment-form">
-            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" />
+            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" required />
             <button type="submit">Post</button>
           </form>
         </article>
 
+        <!-- Post Card 3 -->
         <article class="post-card">
           <header class="post-header">
             <div class="profile-line">
@@ -124,28 +160,40 @@
             </div>
             <button class="icon-button" type="button" title="More options">⋯</button>
           </header>
+          
           <img class="post-media" src="images/mood.png" alt="Mood photo" />
+          
           <div class="post-actions">
             <div class="action-group">
               <button class="icon-button like-button" type="button" title="Like">♥</button>
-              <button class="icon-button" type="button" title="Comment"><img class="action-icon" src="images/speech.png" alt="Comment" /></button>
-              <button class="icon-button" type="button" title="Share"><img class="action-icon" src="images/send.png" alt="Share" /></button>
+              <button class="icon-button" type="button" title="Comment">
+                <img class="action-icon" src="images/speech.png" alt="Comment" />
+              </button>
+              <button class="icon-button" type="button" title="Share">
+                <img class="action-icon" src="images/send.png" alt="Share" />
+              </button>
             </div>
-            <button class="icon-button" type="button" title="Save"><img class="action-icon" src="images/save.png" alt="Save" /></button>
+            <button class="icon-button" type="button" title="Save">
+              <img class="action-icon" src="images/save.png" alt="Save" />
+            </button>
           </div>
+
           <div class="post-copy">
             <p class="likes"><span data-likes>908</span> likes</p>
             <p class="caption"><strong>Chris Nabintu</strong> Soft mood, big dreams.</p>
+            <div class="user-comments"></div>
             <p class="comments-link">View all 660 comments</p>
             <p class="time">3 hours ago</p>
           </div>
+
           <form class="comment-form">
-            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" />
+            <input type="text" placeholder="Add a comment..." aria-label="Add a comment" required />
             <button type="submit">Post</button>
           </form>
         </article>
       </section>
 
+      <!-- Sidebar -->
       <aside class="sidebar" aria-label="Suggestions">
         <div class="panel">
           <div class="current-user">
@@ -156,44 +204,51 @@
             </div>
           </div>
 
-          <h2>Suggestions For You</h2>
-          <div class="suggestion">
-            <img class="avatar" src="images/1981af06-1021-4ecb-a521-122c9e94f661.JPG" alt="Elon Musk" />
-            <div class="suggestion-text">
-              <p class="name">Elon Musk</p>
-              <p class="status">Follows you</p>
-            </div>
-            <button class="follow-btn" type="button">Follow</button>
+          <div class="suggestions-header">
+            <h2>Suggestions For You</h2>
+            <button class="see-all-btn" type="button">See All</button>
           </div>
-          <div class="suggestion">
-            <img class="avatar" src="images/images.jpeg" alt="Josue Satira" />
-            <div class="suggestion-text">
-              <p class="name">Josue Satira</p>
-              <p class="status">Follows you</p>
+
+          <div class="suggestion-list">
+            <div class="suggestion">
+              <img class="avatar" src="images/1981af06-1021-4ecb-a521-122c9e94f661.JPG" alt="Elon Musk" />
+              <div class="suggestion-text">
+                <p class="name">Elon Musk</p>
+                <p class="status">Follows you</p>
+              </div>
+              <button class="follow-btn" type="button">Follow</button>
             </div>
-            <button class="follow-btn" type="button">Follow</button>
-          </div>
-          <div class="suggestion">
-            <img class="avatar" src="images/1622831864790.jpeg" alt="Jospin Chim" />
-            <div class="suggestion-text">
-              <p class="name">Jospin Chim</p>
-              <p class="status">Follows you</p>
+            <div class="suggestion">
+              <img class="avatar" src="images/images.jpeg" alt="Josue Satira" />
+              <div class="suggestion-text">
+                <p class="name">Josue Satira</p>
+                <p class="status">Follows you</p>
+              </div>
+              <button class="follow-btn" type="button">Follow</button>
             </div>
-            <button class="follow-btn" type="button">Follow</button>
-          </div>
-          <div class="suggestion">
-            <img class="avatar" src="images/IMG_2333.jpg" alt="Joseph Burume" />
-            <div class="suggestion-text">
-              <p class="name">Joseph Burume</p>
-              <p class="status">Follows you</p>
+            <div class="suggestion">
+              <img class="avatar" src="images/1622831864790.jpeg" alt="Jospin Chim" />
+              <div class="suggestion-text">
+                <p class="name">Jospin Chim</p>
+                <p class="status">Follows you</p>
+              </div>
+              <button class="follow-btn" type="button">Follow</button>
             </div>
-            <button class="follow-btn" type="button">Follow</button>
+            <div class="suggestion">
+              <img class="avatar" src="images/IMG_2333.jpg" alt="Joseph Burume" />
+              <div class="suggestion-text">
+                <p class="name">Joseph Burume</p>
+                <p class="status">Follows you</p>
+              </div>
+              <button class="follow-btn" type="button">Follow</button>
+            </div>
           </div>
         </div>
       </aside>
     </main>
 
     <script>
+      // Like button toggle functionality
       document.querySelectorAll(".like-button").forEach((button) => {
         button.addEventListener("click", () => {
           const card = button.closest(".post-card");
@@ -203,6 +258,7 @@
         });
       });
 
+      // Follow/Unfollow button toggle
       document.querySelectorAll(".follow-btn").forEach((button) => {
         button.addEventListener("click", () => {
           const following = button.classList.toggle("following");
@@ -210,18 +266,25 @@
         });
       });
 
+      // Add comment functionality
       document.querySelectorAll(".comment-form").forEach((form) => {
         form.addEventListener("submit", (event) => {
           event.preventDefault();
           const input = form.querySelector("input");
-          if (!input.value.trim()) return;
-          const copy = form.previousElementSibling;
+          const val = input.value.trim();
+          if (!val) return;
+
+          const commentsContainer = form.previousElementSibling.querySelector(".user-comments");
           const comment = document.createElement("p");
-          const author = document.createElement("strong");
           comment.className = "caption";
-          author.textContent = "You";
-          comment.append(author, ` ${input.value.trim()}`);
-          copy.insertBefore(comment, copy.querySelector(".time"));
+          
+          const author = document.createElement("strong");
+          author.textContent = "You ";
+
+          comment.appendChild(author);
+          comment.appendChild(document.createTextNode(val));
+          
+          commentsContainer.appendChild(comment);
           input.value = "";
         });
       });
