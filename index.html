@@ -247,47 +247,7 @@
       </aside>
     </main>
 
-    <script>
-      // Like button toggle functionality
-      document.querySelectorAll(".like-button").forEach((button) => {
-        button.addEventListener("click", () => {
-          const card = button.closest(".post-card");
-          const likes = card.querySelector("[data-likes]");
-          const liked = button.classList.toggle("active");
-          likes.textContent = Number(likes.textContent) + (liked ? 1 : -1);
-        });
-      });
-
-      // Follow/Unfollow button toggle
-      document.querySelectorAll(".follow-btn").forEach((button) => {
-        button.addEventListener("click", () => {
-          const following = button.classList.toggle("following");
-          button.textContent = following ? "Following" : "Follow";
-        });
-      });
-
-      // Add comment functionality
-      document.querySelectorAll(".comment-form").forEach((form) => {
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-          const input = form.querySelector("input");
-          const val = input.value.trim();
-          if (!val) return;
-
-          const commentsContainer = form.previousElementSibling.querySelector(".user-comments");
-          const comment = document.createElement("p");
-          comment.className = "caption";
-          
-          const author = document.createElement("strong");
-          author.textContent = "You ";
-
-          comment.appendChild(author);
-          comment.appendChild(document.createTextNode(val));
-          
-          commentsContainer.appendChild(comment);
-          input.value = "";
-        });
-      });
-    </script>
+    <!-- Link to external JS script file -->
+    <script src="socialmedia.js"></script>
   </body>
 </html>
